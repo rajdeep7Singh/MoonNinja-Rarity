@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MoonNinja-Rarity/static/css/main.2c5b4a18.chunk.css",
+    "main.js": "/MoonNinja-Rarity/static/js/main.074e03ea.chunk.js",
+    "main.js.map": "/MoonNinja-Rarity/static/js/main.074e03ea.chunk.js.map",
+    "runtime-main.js": "/MoonNinja-Rarity/static/js/runtime-main.a0caeb27.js",
+    "runtime-main.js.map": "/MoonNinja-Rarity/static/js/runtime-main.a0caeb27.js.map",
+    "static/js/2.7e20c23e.chunk.js": "/MoonNinja-Rarity/static/js/2.7e20c23e.chunk.js",
+    "static/js/2.7e20c23e.chunk.js.map": "/MoonNinja-Rarity/static/js/2.7e20c23e.chunk.js.map",
+    "static/js/3.6c2d847c.chunk.js": "/MoonNinja-Rarity/static/js/3.6c2d847c.chunk.js",
+    "static/js/3.6c2d847c.chunk.js.map": "/MoonNinja-Rarity/static/js/3.6c2d847c.chunk.js.map",
+    "index.html": "/MoonNinja-Rarity/index.html",
+    "static/css/main.2c5b4a18.chunk.css.map": "/MoonNinja-Rarity/static/css/main.2c5b4a18.chunk.css.map",
+    "static/js/2.7e20c23e.chunk.js.LICENSE.txt": "/MoonNinja-Rarity/static/js/2.7e20c23e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a0caeb27.js",
+    "static/js/2.7e20c23e.chunk.js",
+    "static/css/main.2c5b4a18.chunk.css",
+    "static/js/main.074e03ea.chunk.js"
+  ]
+}
