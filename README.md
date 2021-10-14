@@ -1,2 +1,1 @@
-# MoonNinja-Rarity
-Calculating Rarity of every MoonNinja
+Check Rarity at https://rajdeep7singh.github.io/MoonNinja-Rarity/

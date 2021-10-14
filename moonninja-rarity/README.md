@@ -1,1 +1,0 @@
-Check Rarity at https://rajdeep7singh.github.io/MoonNinja-Rarity/
