@@ -1,0 +1,66 @@
+{
+    "Accessories": {
+      "None": 0.6845,
+      "Sonichu Medallion": 0.0689,
+      "Moonlight Visor": 0.0632,
+      "Moon Gauntlet": 0.0628,
+      "Moonriver Ice Cream Necklace": 0.0593,
+      "Kilt Protocol": 0.0588,
+      "Rabbit Mask": 0.0023,
+      "Kilt": 0.0002
+    },
+    "Body": {
+      "Dark Blue": 0.1640,
+      "Purple": 0.1513,
+      "Gray": 0.1492,
+      "Light Blue": 0.1466,
+      "Yellow": 0.1405,
+      "Green": 0.0972,
+      "Red": 0.0970,
+      "White": 0.0543
+    },
+    "Eyes": {
+      "Cyclops": 0.2345,
+      "Faded": 0.2260,
+      "Innocent": 0.2221,
+      "Joy": 0.0834,
+      "Angry": 0.0822,
+      "Solid": 0.0548,
+      "Anime": 0.0497,
+      "Glowing": 0.0473
+    },
+    "Flag": {
+      "None": 0.8264,
+      "Moonriver": 0.085,
+      "Kusama": 0.0850
+    },
+    "Moon": {
+      "Yellow": 0.1483,
+      "Green": 0.1476,
+      "Pink": 0.1464,
+      "Orange": 0.1459,
+      "Blue": 0.1405,
+      "Red": 0.1400,
+      "Purple": 0.1312
+    },
+    "Skin": {
+      "Tan": 0.2481,
+      "Pale": 0.2382,
+      "Pale Eye Gash": 0.1630,
+      "Tan Eye Gash": 0.1459,
+      "Tan Face Tats": 0.0810,
+      "Pale Face Tats": 0.073,
+      "Cyborg": 0.0506
+    },
+    "Weapons": {
+      "Buster Sword": 0.1944,
+      "Odradek": 0.1888,
+      "Hidden Blades": 0.1836,
+      "The Great Knife": 0.1722,
+      "High Frequency Blade": 0.0733,
+      "Ethereal Master Sword": 0.0672,
+      "Dual High Frequency Blades": 0.0663,
+      "MoonBlade": 0.0541
+    }
+  
+  }
