@@ -1,14 +1,13 @@
 import './App.css';
 import React, { useState } from 'react';
 import Rarity from './rarity'
-import rarityCalculation from './utils'
-const data = require('./output.json');
-const stats = require('./stats.json');
 
-let arr = []
-Object.keys(data).forEach(function(key) {
-  arr.push(data[key]);
-});
+const data = require('./output.json');
+
+// let arr = []
+// Object.keys(data).forEach(function(key) {
+//   arr.push(data[key]);
+// });
 
 function App() {
   const id = window.location.href.split('id=').pop();
@@ -28,13 +27,12 @@ function App() {
           <form className='form' method='get'>
             <input name='id' type='text' placeholder='123' />
             <input type='submit' value='Search'/>
-            <button type='button' onClick={rarity}>Listing</button>
+            <button type='button' onClick={rarity}>Rartity wise list</button>
           </form><br/>
           <div>Buy me a coffee: <span className='address'>0x255885BD80B534e72Fc4ac9989C2351249EC5f89</span></div><br/>
           <div>I am not associated with the <a rel="noreferrer" target="_blank" href="https://moonninja.com/">MOONNINJA</a> team.</div><br/>
           <div>Made with &#9829; by <a rel="noreferrer" target="_blank" href='https://twitter.com/sklul7'>@sklul7</a></div>
-          {show? <Rarity data={arr}></Rarity> : null}
-          
+          {show? <Rarity data={data}></Rarity> : null}
         </header>
       </div>
     );
@@ -58,7 +56,7 @@ function App() {
             <span className='percentage'>{attribute.trait_type}:{attribute.value}</span>
           </div>)}
         </div><br/>
-        <div>Rarity: {rarityCalculation(ninja)} (Lower the rarer)</div>
+        <div>Rarity: {ninja.rarity.toFixed(5)} (Lower the rarer)</div>
         <div>Check another <a href="/">MOONNINJA</a></div><br/>
         <div>Buy me a coffee: <span className='address'>0x255885BD80B534e72Fc4ac9989C2351249EC5f89</span></div><br/>
         <div>I am not associated with the <a rel="noreferrer" target="_blank" href="https://moonninja.com/">MOONNINJA</a> team.</div><br/>

@@ -9,7 +9,6 @@ function rarityCalculation(ninja){
       trait_count = stats[attributes[i].trait_type][attributes[i].value]
       rarity *= trait_count
     }
-    console.log(rarity)
     return rarity*1000000
   }
 
