@@ -23,8 +23,11 @@ for p in k:
 
 newlist = sorted(sort_arr, key=lambda d: d['rarity'])
 
+count = 1
 for m in newlist:
+    m['rank'] = count
     final_data[m['number']] = m
+    count +=1
 
 with open('output.json', 'w', encoding='utf-8') as f:
-    json.dump(newlist, f, ensure_ascii=False, indent=3)
+    json.dump(final_data, f, ensure_ascii=False, indent=3)

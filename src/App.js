@@ -4,11 +4,6 @@ import Rarity from './rarity'
 
 const data = require('./output.json');
 
-// let arr = []
-// Object.keys(data).forEach(function(key) {
-//   arr.push(data[key]);
-// });
-
 function App() {
   const id = window.location.href.split('id=').pop();
   const ninja = data[id];
@@ -17,6 +12,8 @@ function App() {
   const rarity = () => {
     setShow(!show)
   }
+
+  var imageName = require('./1834.png')
 
   if (!ninja) {
     return (
@@ -27,7 +24,7 @@ function App() {
           <form className='form' method='get'>
             <input name='id' type='text' placeholder='123' />
             <input type='submit' value='Search'/>
-            <button type='button' onClick={rarity}>Rartity wise list</button>
+            <button type='button' onClick={rarity}>Rarity wise list</button>
           </form><br/>
           <div>Buy me a coffee: <span className='address'>0x255885BD80B534e72Fc4ac9989C2351249EC5f89</span></div><br/>
           <div>I am not associated with the <a rel="noreferrer" target="_blank" href="https://moonninja.com/">MOONNINJA</a> team.</div><br/>
@@ -57,6 +54,7 @@ function App() {
           </div>)}
         </div><br/>
         <div>Rarity: {ninja.rarity.toFixed(5)} (Lower the rarer)</div>
+        <div class='bold'>Rank: {ninja.rank}/4269</div>
         <div>Check another <a href="/">MOONNINJA</a></div><br/>
         <div>Buy me a coffee: <span className='address'>0x255885BD80B534e72Fc4ac9989C2351249EC5f89</span></div><br/>
         <div>I am not associated with the <a rel="noreferrer" target="_blank" href="https://moonninja.com/">MOONNINJA</a> team.</div><br/>
