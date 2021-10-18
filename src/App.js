@@ -1,25 +1,40 @@
 import './App.css';
-
+import React, { useState } from 'react';
+import Rarity from './rarity'
+import rarityCalculation from './utils'
 const data = require('./output.json');
 const stats = require('./stats.json');
+
+let arr = []
+Object.keys(data).forEach(function(key) {
+  arr.push(data[key]);
+});
 
 function App() {
   const id = window.location.href.split('id=').pop();
   const ninja = data[id];
+  const [show, setShow] = useState(false);
+
+  const rarity = () => {
+    setShow(!show)
+  }
 
   if (!ninja) {
     return (
       <div className="App">
         <header className="App-header">
-          <a rel="noreferrer" target="_blank" href='https://moonninjas.com/nft/1834'><img src="https://ipfs.io/ipfs/QmSeBuEUScRgvGWCPpQbC8KyddujLkLXsM7BgapiSoZbwP/4201.png" className="App-logo" alt="logo" /></a>
+          <a rel="noreferrer" target="_blank" href='https://moonninjas.com/nft/1834'><img src="https://ipfs.io/ipfs/QmSeBuEUScRgvGWCPpQbC8KyddujLkLXsM7BgapiSoZbwP/1834.png" className="App-logo" alt="logo" /></a>
           <p>Check Rarity of Moonninja</p>
           <form className='form' method='get'>
             <input name='id' type='text' placeholder='123' />
             <input type='submit' value='Search'/>
-          </form><br />
+            <button type='button' onClick={rarity}>Listing</button>
+          </form><br/>
           <div>Buy me a coffee: <span className='address'>0x255885BD80B534e72Fc4ac9989C2351249EC5f89</span></div><br/>
           <div>I am not associated with the <a rel="noreferrer" target="_blank" href="https://moonninja.com/">MOONNINJA</a> team.</div><br/>
           <div>Made with &#9829; by <a rel="noreferrer" target="_blank" href='https://twitter.com/sklul7'>@sklul7</a></div>
+          {show? <Rarity data={arr}></Rarity> : null}
+          
         </header>
       </div>
     );
@@ -30,18 +45,6 @@ function App() {
 
   const imageUrl = `https://ipfs.io/ipfs/${ninja.image.split('//').pop()}`
 
-  function rarityCalculation(ninja){
-    let attributes = ninja.attributes;
-    let i = 0;
-    let rarity = 1;
-    let trait_count = null;
-    for (i = 0; i < attributes.length; i++){
-      trait_count = stats[attributes[i].trait_type][attributes[i].value]
-      rarity *= trait_count
-    }
-    console.log(rarity)
-    return rarity*1000000
-  }
   console.log(imageUrl);
 
   return (
