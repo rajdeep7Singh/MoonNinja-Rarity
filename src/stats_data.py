@@ -23,11 +23,21 @@ for p in k:
 
 newlist = sorted(sort_arr, key=lambda d: d['rarity'])
 
-count = 1
+count = 3
+arr = []
 for m in newlist:
     m['rank'] = count
     final_data[m['number']] = m
     count +=1
+    #arr.append(m['number'])
 
-with open('output.json', 'w', encoding='utf-8') as f:
+with open('./output.json', 'w', encoding='utf-8') as f:
     json.dump(final_data, f, ensure_ascii=False, indent=3)
+
+# import urllib.request
+
+# for i in moon_data:
+#     if int(i) > 1020:
+#         image_url = f"https://ipfs.io/ipfs/{moon_data[i]['image'].split('//')[-1]}"
+#         urllib.request.urlretrieve(image_url, f"assets/{image_url.split('/')[-1]}")
+#         print(f'fetched url:{image_url}')

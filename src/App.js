@@ -13,8 +13,6 @@ function App() {
     setShow(!show)
   }
 
-  var imageName = require('./1834.png')
-
   if (!ninja) {
     return (
       <div className="App">
@@ -35,9 +33,6 @@ function App() {
     );
   }
 
-  console.log(ninja.image);
-  console.log(ninja.attributes)
-
   const imageUrl = `https://ipfs.io/ipfs/${ninja.image.split('//').pop()}`
 
   console.log(imageUrl);
@@ -53,7 +48,11 @@ function App() {
             <span className='percentage'>{attribute.trait_type}:{attribute.value}</span>
           </div>)}
         </div><br/>
-        <div>Rarity: {ninja.rarity.toFixed(5)} (Lower the rarer)</div>
+        {ninja.number == '1273' || ninja.number == '1274'? 
+          <div>Rarity: {ninja.rarity}</div>
+        :
+          <div>Rarity: {ninja.rarity.toFixed(5)} (Lower the rarer)</div>
+        }
         <div class='bold'>Rank: {ninja.rank}/4269</div>
         <div>Check another <a href="/">MOONNINJA</a></div><br/>
         <div>Buy me a coffee: <span className='address'>0x255885BD80B534e72Fc4ac9989C2351249EC5f89</span></div><br/>
@@ -65,3 +64,6 @@ function App() {
 }
 
 export default App;
+
+
+

@@ -1,9 +1,9 @@
 import fetch from 'node-fetch';
-import * as fs from 'fs';
+// import * as fs from 'fs';
 
 async function main() {
   let traitsData = {}
-  for (let i = 1; i < 4270; i++) {
+  for (let i = 1273; i < 1275; i++) {
     const result = await fetch(`https://ipfs.io/ipfs/QmQMNdQS1UZkerbM429knJPTCNLV5zTfpmiEunKd4rYsZ3/${i}`, {
       "credentials": "omit",
       "headers": {
@@ -22,11 +22,11 @@ async function main() {
     console.log(data);
     traitsData[i] = data
   }
-  fs.writeFile ("output.json", JSON.stringify(traitsData), 'utf8', function(err) {
-    if (err) throw err;
-    console.log('complete');
-  }
-  );
+  // fs.writeFile ("output.json", JSON.stringify(traitsData), 'utf8', function(err) {
+  //   if (err) throw err;
+  //   console.log('complete');
+  // }
+  // );
   console.log(traitsData)
 }
 
