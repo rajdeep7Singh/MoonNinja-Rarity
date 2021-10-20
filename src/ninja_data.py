@@ -44586,6 +44586,77 @@ moon_data = {
       }
     ]
   },
+     "1273": {
+      "image": "ipfs://QmNgFPzajZ1URS3eqHLrqCVarWgWDAU91VLoDD4vUvyjhV/1273.png",
+      "name": "Ninja #1273",
+      "description": "Ninja generative NFTs",
+      "attributes": [
+         {
+            "trait_type": "Moon",
+            "value": "Pink"
+         },
+         {
+            "trait_type": "Flag",
+            "value": "None"
+         },
+         {
+            "trait_type": "Weapons",
+            "value": "Big Bags"
+         },
+         {
+            "trait_type": "Body",
+            "value": "CEO of Kusama"
+         },
+         {
+            "trait_type": "Skin",
+            "value": "Titan"
+         },
+         {
+            "trait_type": "Eyes",
+            "value": "Glowing Red"
+         },
+         {
+            "trait_type": "Accessories",
+            "value": "Moon Gauntlet"
+         }
+      ]
+    },
+    
+    "1274": {
+      "image": "ipfs://QmNgFPzajZ1URS3eqHLrqCVarWgWDAU91VLoDD4vUvyjhV/1274.png",
+      "name": "Ninja #1274",
+      "description": "Ninja generative NFTs",
+      "attributes": [
+         {
+            "trait_type": "Moon",
+            "value": "Pink"
+         },
+         {
+            "trait_type": "Flag",
+            "value": "None"
+         },
+         {
+            "trait_type": "Weapons",
+            "value": "Dual High Frequency Blades"
+         },
+         {
+            "trait_type": "Body",
+            "value": "New York"
+         },
+         {
+            "trait_type": "Skin",
+            "value": "Pale"
+         },
+         {
+            "trait_type": "Eyes",
+            "value": "Mr. Biz"
+         },
+         {
+            "trait_type": "Accessories",
+            "value": "Moonriver Ice Cream Necklace"
+         }
+      ]
+    },
   "1275": {
     "image": "ipfs://QmSeBuEUScRgvGWCPpQbC8KyddujLkLXsM7BgapiSoZbwP/1275.png",
     "name": "Ninja #1275",

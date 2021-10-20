@@ -17,7 +17,8 @@
       "Yellow": 0.1405,
       "Green": 0.0972,
       "Red": 0.0970,
-      "White": 0.0543
+      "White": 0.0543,
+      "CEO of Kusama": 0.0002
     },
     "Eyes": {
       "Cyclops": 0.2345,
@@ -27,7 +28,8 @@
       "Angry": 0.0822,
       "Solid": 0.0548,
       "Anime": 0.0497,
-      "Glowing": 0.0473
+      "Glowing": 0.0473,
+      "Glowing Red": 0.0002
     },
     "Flag": {
       "None": 0.8264,
@@ -37,7 +39,7 @@
     "Moon": {
       "Yellow": 0.1483,
       "Green": 0.1476,
-      "Pink": 0.1464,
+      "Pink": 0.1469,
       "Orange": 0.1459,
       "Blue": 0.1405,
       "Red": 0.1400,
@@ -50,7 +52,8 @@
       "Tan Eye Gash": 0.1459,
       "Tan Face Tats": 0.0810,
       "Pale Face Tats": 0.073,
-      "Cyborg": 0.0506
+      "Cyborg": 0.0506,
+      "Titan": 0.0002
     },
     "Weapons": {
       "Buster Sword": 0.1944,
@@ -60,7 +63,8 @@
       "High Frequency Blade": 0.0733,
       "Ethereal Master Sword": 0.0672,
       "Dual High Frequency Blades": 0.0663,
-      "MoonBlade": 0.0541
+      "MoonBlade": 0.0541,
+      "Big Bags": 0.0002
     }
   
   }
