@@ -44586,76 +44586,6 @@ moon_data = {
       }
     ]
   },
-  "1273": {
-    "image": "ipfs://QmSeBuEUScRgvGWCPpQbC8KyddujLkLXsM7BgapiSoZbwP/1273.png",
-    "name": "Ninja #1273",
-    "description": "Ninja generative NFTs",
-    "attributes": [
-      {
-        "trait_type": "Moon",
-        "value": "Green"
-      },
-      {
-        "trait_type": "Flag",
-        "value": "None"
-      },
-      {
-        "trait_type": "Weapons",
-        "value": "Hidden Blades"
-      },
-      {
-        "trait_type": "Body",
-        "value": "Gray"
-      },
-      {
-        "trait_type": "Skin",
-        "value": "Pale"
-      },
-      {
-        "trait_type": "Eyes",
-        "value": "Cyclops"
-      },
-      {
-        "trait_type": "Accessories",
-        "value": "None"
-      }
-    ]
-  },
-  "1274": {
-    "image": "ipfs://QmSeBuEUScRgvGWCPpQbC8KyddujLkLXsM7BgapiSoZbwP/1274.png",
-    "name": "Ninja #1274",
-    "description": "Ninja generative NFTs",
-    "attributes": [
-      {
-        "trait_type": "Moon",
-        "value": "Orange"
-      },
-      {
-        "trait_type": "Flag",
-        "value": "None"
-      },
-      {
-        "trait_type": "Weapons",
-        "value": "Hidden Blades"
-      },
-      {
-        "trait_type": "Body",
-        "value": "Gray"
-      },
-      {
-        "trait_type": "Skin",
-        "value": "Pale Eye Gash"
-      },
-      {
-        "trait_type": "Eyes",
-        "value": "Faded"
-      },
-      {
-        "trait_type": "Accessories",
-        "value": "None"
-      }
-    ]
-  },
   "1275": {
     "image": "ipfs://QmSeBuEUScRgvGWCPpQbC8KyddujLkLXsM7BgapiSoZbwP/1275.png",
     "name": "Ninja #1275",
@@ -125506,6 +125436,7 @@ moon_data = {
       }
     ]
   },
+  '3585': {"image":"ipfs://QmSeBuEUScRgvGWCPpQbC8KyddujLkLXsM7BgapiSoZbwP/3585.png","name":"Ninja #3585","description":"Ninja generative NFTs","attributes":[{"trait_type":"Moon","value":"Orange"},{"trait_type":"Flag","value":"None"},{"trait_type":"Weapons","value":"Buster Sword"},{"trait_type":"Body","value":"Yellow"},{"trait_type":"Skin","value":"Tan"},{"trait_type":"Eyes","value":"Joy"},{"trait_type":"Accessories","value":"Sonichu Medallion"}]},
   "3586": {
     "image": "ipfs://QmSeBuEUScRgvGWCPpQbC8KyddujLkLXsM7BgapiSoZbwP/3586.png",
     "name": "Ninja #3586",

@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 
 async function main() {
   let traitsData = {}
-  for (let i = 1273; i < 1275; i++) {
+  for (let i = 3585; i < 3586; i++) {
     const result = await fetch(`https://ipfs.io/ipfs/QmQMNdQS1UZkerbM429knJPTCNLV5zTfpmiEunKd4rYsZ3/${i}`, {
       "credentials": "omit",
       "headers": {

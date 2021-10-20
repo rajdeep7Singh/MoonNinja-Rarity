@@ -4,18 +4,20 @@ import json
 from operator import itemgetter
 k = moon_data
 final_data = {}
+
 for i in k:
-    try:
-        attributes = k[i]['attributes']
-        rarity = 1
-        trait_count = None
-        for j in range(0, len(attributes)):
-            trait_count = stats[attributes[j]['trait_type']][attributes[j]['value']]
-            rarity *= trait_count
-        k[i]['rarity'] = rarity*1000000
-        k[i]['number'] = i
-    except Exception as e:
-        continue
+    if i not in ["1273", "1274"]:
+        try:
+            attributes = k[i]['attributes']
+            rarity = 1
+            trait_count = None
+            for j in range(0, len(attributes)):
+                trait_count = stats[attributes[j]['trait_type']][attributes[j]['value']]
+                rarity *= trait_count
+            k[i]['rarity'] = rarity*1000000
+            k[i]['number'] = i
+        except Exception as e:
+            continue
 
 sort_arr = []
 for p in k:
@@ -29,10 +31,18 @@ for m in newlist:
     m['rank'] = count
     final_data[m['number']] = m
     count +=1
-    #arr.append(m['number'])
+    arr.append(m['number'])
 
-with open('./output.json', 'w', encoding='utf-8') as f:
-    json.dump(final_data, f, ensure_ascii=False, indent=3)
+# rank = []
+# ko = []
+# for l in final_data:
+#     if final_data[l]['rank'] in rank:
+#         print(final_data[l])
+#     rank.append(final_data[l]['rank'])
+# print(len(list(set(rank))))
+
+with open('./rarity-data.json', 'w', encoding='utf-8') as f:
+    json.dump(arr, f, ensure_ascii=False, indent=3)
 
 # import urllib.request
 
